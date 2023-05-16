@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Generate Pokemon</title>
+	<style>
+		body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+a {
+  display: block;
+  text-align: center;
+  color: red;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+	</style>
+</head>
+
+<body>
+	<h1>Pokemon Generated</h1>
+	<div>
+		Congratulations <%- name %>!
+		<br>
+		You have generated <%- pokemon%>
+	</div>
+	<hr>
+	<a href="/">Back to Start</a>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Starter Pokemon</title>
+	<style>
+		/* styles.css */
+
+/* General Styles */
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: blue;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid red;
+  margin: 20px 0;
+}
+
+a {
+  display: block;
+  text-align: center;
+  color: red;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+	</style>
+</head>
+
+<body>
+	<h1>Create Pokemon Account</h1>
+	<form action="http://localhost:5000/start" method="post">
+		<fieldset>
+			<br>
+			<label>Name: <input type="text" name="name"/></label>
+			<label>Age: <input type="text" name="age"/></label>
+			<label>Hometown: <input type="text" name="hometown"></label>
+            <br><br>
+			<br>
+            <label>Additional Trainer Information: <br><textarea rows="5" cols="80" name="trainerinfo"></textarea></label>
+		</fieldset>
+		<br>
+		<input type="reset" />
+		<input type="submit" value="Create your Account!"/>
+	</form>
+	<hr>
+	<a href="/">Back to Start</a>
+</body>
+
+</html>
